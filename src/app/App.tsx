@@ -11,7 +11,7 @@ import { WhatsAppButton } from './components/WhatsAppButton';
 import { AdminDashboard } from './components/admin/AdminDashboard';
 import { Button } from './components/ui/button';
 import { Shield } from 'lucide-react';
-
+import { UserCog } from "lucide-react";
 export default function App() {
   const [showAdmin, setShowAdmin] = useState(false);
 
@@ -39,7 +39,8 @@ export default function App() {
         className="fixed bottom-6 left-6 z-50 w-12 h-12 rounded-full bg-gradient-to-br from-gray-700 to-gray-900 hover:from-gray-600 hover:to-gray-800 text-white shadow-2xl p-0"
         title="Admin Dashboard"
       >
-        <Shield className="w-5 h-5" />
+        {/* <Shield className="w-5 h-5" /> */}
+        <UserCog className="w-5 h-5" />
       </Button>
     </div>
   );
